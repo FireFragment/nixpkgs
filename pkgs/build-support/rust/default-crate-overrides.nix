@@ -387,6 +387,11 @@
     buildInputs = [ python3 ];
   };
 
+  yeslogic-fontconfig-sys = attrs: {
+    nativeBuildInputs = [ pkg-config ];
+    buildInputs = [ fontconfig ];
+  };
+
   atk-sys = attrs: {
     nativeBuildInputs = [ pkg-config ];
     buildInputs = [ atk ];
